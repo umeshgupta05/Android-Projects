@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Planner"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#0039a6"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/btnSelectImage"
+        android:src="@drawable/event_type"
+        android:scaleType="fitCenter"
+        android:background='@android:color/transparent'
+        android:contentDescription="Select Image"
+        />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:text="Date Not Selected"
+
+        />
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Date"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvEventType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Select Event Type"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroupEvent">
+
+        <RadioButton
+            android:id="@+id/radioWedding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding"/>
+        <RadioButton
+            android:id="@+id/radioBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"/>
+        <RadioButton
+            android:id="@+id/radioConference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conference"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleect Additional Services"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbCatering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catering"
+            android:buttonTint="#0039a6"
+            android:layout_marginLeft="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cbPhotography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photography"
+            android:buttonTint="#0039a6"
+            android:layout_marginLeft="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cbLiveMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Music"
+            android:buttonTint="#0039a6"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+
+        />
+
+</LinearLayout>
